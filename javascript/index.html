@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript view</title>
+</head>
+<body>
+	<h1 id= "title">Javascript tutor</h1>
+		<label for="name" value="Akshay">Say hello to:</label>
+		
+		<input id = "name" type="text">
+		<button>Say it!</button>
+		<div id="content"></div>
+	
+	<script>
+		
+		document.querySelector('button').addEventListener('click',sayHello);
+
+		function sayHello(){
+			var xhr = new XMLHttpRequest();
+
+			xhr.open = ('GET','name.txt', true);
+			console.log("READY STATE: ",xhr.readyState);
+		    
+		    xhr.onprogress = function (){
+
+		    	console.log("READY STATE: ",xhr.readyState);
+		    }
+
+		    xhr.onreadystatechange = function(){
+		    	console.log("READY STATE: ",xhr.readyState);
+		    	if(this.readyState == 4 && this.status == 200){
+
+		    	}
+		    }
+
+		    // xhr.onload = function(){
+		    // 	console.log("READY STATE: ",xhr.readyState);
+		    // 	if(xhr.status == 200){
+		    	//console
+		    // 	}
+		    // }
+		    
+
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+/****front page starts****/
+body{
+	background-color: #FFDAB9; 
+    
+}
+
+#header-nav{
+	background-color: #B0E0E6;
+	border-radius: 0;
+	border: 0;
+}
+
+#logo-img{
+	background: url('../images/truck.jpg') no-repeat;
+	width: 130px;
+	height: 130px;
+	margin: 10px 15px 10px 0;
+	border-radius: 50%;
+	background-position: 30% 50%;
+
+}
+.navbar-brand{
+	padding-top: 25px;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+
+.navbar-brand h1{
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #222;
+	font-weight: bold;
+	font-size: 1.5em;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+
+.navbar-brand p {
+	text-transform: uppercase;
+	margin-top: 10px;
+
+}
+.navbar-brand {
+	vertical-align: middle;
+}
+
+#nav-list{
+	margin-top: 15px;
+}
+#nav-list a{
+	color: #fff;
+	text-align: center;
+}
+
+#nav-list a:hover{
+	background:#454545;
+	transition-duration: 2s;
+}
+#nav-list .active{
+	background-color: #454545;
+}
+
+#nav-list a span{
+	font-size: 1.5em;
+}
+
+#phone{
+	text-align: right;
+}
+
+#phone a{
+	margin-top: -20px;
+}
+
+#phone div{
+	color:#454545;
+	padding-right: 5px;
+	margin-top: -5px;
+	font-family: 'Shadows Into Light', cursive;
+	font-weight: bold;
+	font-style: italic;
+	
+}
+/****header ends here****/
+
+/****main content goes here****/
+.container .jumbotron{
+	box-shadow: 0 0 25px #483D8B;
+	border:  2px solid #3F0C1F;
+
+}
+
+#transport_services, #about_us, #map {
+	width: 100%;
+	height: 180px;
+	margin: 15px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 5px;
+
+}
+
+#transport_services:hover, #about_us:hover, #map:hover{
+   box-shadow: 0 1px 5px 1px #4B0082;
+}
+
+#transport_services{
+	background: url('../images/lorry.jpg') no-repeat;
+	background-position: center;
+	background-size: 120%;
+}
+#about_us{
+	background: url('../images/about_us.jpg') no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+
+#transport_services span, #about_us span, #map span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1em;
+	text-transform: uppercase;
+	background-color: #000;
+	color: #fff;
+	opacity: .6;
+}
+
+
+/****Main content ends here****/
+
+/****footer starts here****/
+.panel-footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #222;
+	border-top: 0; 
+	color: #fff;
+    text-align: center;
+}
+
+.panel-footer .container .row{
+	margin-bottom: 35px;
+
+}
+
+#hours, #address{
+	line-height: 1.8;
+}
+
+#hours > span,  #address > span {
+	font-size: 1.4em;
+}
+
+#adress p{
+	color: #557C3E;
+	font-size: .7em;
+	line-height: 1.8;
+}
+
+/****footer ends here****/
+
+/**** front page ends here****/
+
+
+
+
+/****large devices****/
+@media (min-width: 1200px){
+	/*content part*/
+	.container .jumbotron{
+	background: url('../images/1200px.jpg') no-repeat;
+	height: 680px;
+}
+	
+}
+
+
+
+/****medium devices****/
+@media (min-width: 992px) and (max-width: 1199px){
+	/*header part*/
+
+	.navbar-brand h1{
+		padding-top: 10px;
+	    font-size: 2vw; 
+	} 
+
+	#logo-img{
+	background: url('../images/truck_100.jpg') no-repeat;
+	background-position: 30% 50%;
+	width: 100px;
+	height: 100px;
+	margin: 5px 5px 5px 0;
+	border-radius: 50%;
+	}
+	/*content part*/
+
+	.container .jumbotron{
+		background: url('../images/992px.jpg') no-repeat;
+	height:562px ;
+
+}
+
+}
+
+/****small devices****/
+@media (min-width: 768px) and (max-width:991px){
+	/*header part*/
+	.navbar-brand p span {
+		font-size: .7em;
+	}
+	/*content part*/
+
+	.container .jumbotron{
+		background: url('../images/768px.jpg') no-repeat;
+	height: 435px;
+
+}
+
+}
+
+/***for extra small devices***/
+@media (max-width: 767px){
+	/*header part*/
+	.navbar-brand{
+		padding-top: 10px;
+		height: 80px;
+	}
+
+	.navbar-brand h1{
+		padding-top: 10px;
+	    font-size: 4vw; 
+	} 
+
+	.navbar-brand p {
+	   font-size: .7em;
+	   margin-top: 10px;
+    }
+    #collapsable-nav a span{
+    	font-size: .8em;
+    	padding-right: 4px;
+    }
+    
+    #call-btn {
+    	background-color: #B0E0E6;
+    	text-align: center;
+    	margin-top: auto;
+    	margin-bottom: auto;
+    	width: 80%;
+    	margin: 5px auto;
+    	box-shadow: 1px 1px 1px #000;
+    	opacity: 0.75;
+    }
+    #call-btn a{
+    	color: #621621;
+    	font-size: 16px;
+    }
+
+    #call-btn:hover{
+    	color: #000;
+    	background-color: #FFF8DC;
+    }
+
+
+    div.text-center{
+        font-family: 'Shadows Into Light', cursive;
+    	font-weight: bold;
+    	font-style: italic;
+    }
+    /*content part*/
+    .container .jumbotron{
+    	margin-top: 20px;
+    	padding: 0; 
+	}
+
+	#transport_services, #about_us, #map{
+		width: 350px;
+		margin:15px auto;
+	}
+
+}
+
+/***for super small devices***/
+@media (min-width: 479px){
+	#transport_services, #about_us, #map{
+		width: 280px;
+		margin: 15px auto;
+	}
+	hr{
+		width: 50%;
+	}
+
+
+	
+}
